@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro Simples</title>
+    <style>
+        body {
+            font-family: Helvetica;
+            display: flex;
+            justify-content: center;
+            margin-top: 80px;
+        }
+        form {
+            border: 1px solid black;
+            padding: 30px;
+            width: 400px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input {
+            width: 100%;
+        }
+        .botoes {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Cadastro</h2>
+        <label>Nome completo:</label>
+        <input type="text" required>
+        <label>E-mail:</label>
+        <input type="email" required>
+        <label>Senha:</label>
+        <input type="password" required>
+        <label>Data de nascimento:</label>
+        <input type="date" required>
+        <label>Telefone:</label>
+        <input type="tel" required>
+        <label>Cidade:</label>
+        <input type="text" required>
+        <label>Estado:</label>
+        <input type="text" required>
+        <div class="botoes">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
