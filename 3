@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro escolar</title>
+</head>
+<body>
+    <form>
+        <h2>Cadastro escolar</h2>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>Nome do aluno -  <input type="text" name="nome_aluno"></p>
+            <p>Data de nascimento -  <input type="date" name="data_nasc"></p>
+            <p>CPF - <input type="text" name="cpf"></p>
+            <p>RG - <input type="text" name="rg"></p>
+            <p>Nome da mãe - <input type="text" name="nome_mae"></p>
+            <p>Nome do pai - <input type="text" name="nome_pai"></p>
+        </fieldset>
+        <fieldset>
+            <legend>Endereço</legend>
+            <p>CEP - <input type="text" name="cep"></p>
+            <p>Endereço - <textarea name="endereco" rows="2"></textarea></p>
+            <p>Bairro - <input type="text" name="bairro"></p>
+            <p>Cidade -  <input type="text" name="cidade"></p>
+            <p>Estado - 
+                <select name="estado">
+                    <option value="">Selecione</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Informações escolares</legend>
+            <p>Série -
+                <select name="serie">
+                    <option value="">Selecione</option>
+                    <option value="1">Primeiro ano</option>
+                    <option value="2">Segundo ano</option>
+                    <option value="3">Terceiro ano</option>
+                </select>
+            </p>
+            <p>Turno - 
+                <select name="turno">
+                    <option value="">Selecione</option>
+                    <option value="M">Manhã</option>
+                    <option value="V">Tarde</option>
+                    <option value="N">Noite</option>
+                </select>
+            </p>
+        </fieldset>
+        <br>
+        <button type="submit">Enviar cadastro</button>
+    </form>
+</body>
+</html>
