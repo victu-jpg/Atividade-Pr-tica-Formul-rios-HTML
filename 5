@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de vaga</title>
+</head>
+<body>
+    <h2>Cadastro de currículo</h2>
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <p>Nome completo -<br><input type="text" name="nome" required></p>
+        <p>CPF -<br><input type="text" name="cpf" required></p>
+        <p>RG -<br><input type="text" name="rg" required></p>
+        <p>Data de nascimento -<br><input type="date" name="nasc" required></p>
+        <p>Sexo -<br>
+            <input type="radio" name="sexo" value="M" required>M
+            <input type="radio" name="sexo" value="F">F
+        </p>
+        <p>E-mail -<br><input type="email" name="email" required></p>
+        <p>Telefone -<br><input type="tel" name="tel" required></p>
+        <p>Celular -<br><input type=" =el" name="cel" required></p>
+        <p>Rua e Número -<br><input type="text" name="rua" required></p>
+        <p>Bairro -<br><input type="text" name="bairro" required></p>
+        <p>Cidade e Estado -<br><input type="text" name="cidade_estado" required></p>
+        <p>Escolaridade -<br>
+            <select name="escolaridade" required>
+                <option value="Medio">Ensino médio</option>
+                <option value="Tecnico">Ensino técnico</option>
+                <option value="Superior">Ensino superior</option>
+            </select>
+        </p>
+        <p>Cursos:<br><textarea name="cursos" required></textarea></p>
+        <p>Experiência Profissional:<br><textarea name="experiencia" required></textarea></p>
+        <p>Pretensão Salarial:<br><input type="number" name="salario" required></p>
+        <p>Tecnologias:<br>
+            <input type="checkbox" name="tec" value="html">HTML<br>
+            <input type="checkbox" name="tec" value="css">CSS<br>
+            <input type="checkbox" name="tec" value="js">JavaScript<br>
+            <input type="checkbox" name="tec" value="java">Java<br>
+            <input type="checkbox" name="tec" value="py">Python<br>
+            <input type="checkbox" name="tec" value="bd">Banco de Dados
+        </p>
+        <p>Upload do Currículo (PDF/Word) -<br>
+            <input type="file" name="curriculo" accept=".pdf,.doc,.docx" required>
+        </p>
+        <p><button type="submit">Cadastrar</button></p>
+    </form>
+</body>
+</html>
