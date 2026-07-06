@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de satisfação</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Pesquisa de satisfação</h2>
+        <form action="#" method="POST">
+            <p>
+                <label for="nome">Nome completo -</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            </p>
+            <p>
+                <label for="idade">Idade -</label><br>
+                <input type="number" id="idade" name="idade" min="0" max="120" placeholder="Ex: 25" required>
+            </p>
+            <p>
+                <label for="nota">Nota de 0 a 10 -</label><br>
+                <input type="number" id="nota" name="nota" min="0" max="10" step="1" placeholder="Dê uma nota" required>
+            </p>
+            <p>
+                <label>Como você avalia nosso serviço?</label>
+                <p><label><input type="radio" name="avaliacao" value="excelente" required>Excelente</label></p>
+                <p><label><input type="radio" name="avaliacao" value="bom"></label></p>
+                <p><label><input type="radio" name="avaliacao" value="regular">Regular</label></p>
+                <p><label><input type="radio" name="avaliacao" value="ruim">Ruim</label></p>
+            </p>
+            <p>
+                <label>Quais pontos você destaca? (Selecione quantos desejar)</label>
+                <p><label><input type="checkbox" name="destaques" value="atendimento">Atendimento</label></p>
+                <p><label><input type="checkbox" name="destaques" value="qualidade">Qualidade</label></p>
+                <p><label><input type="checkbox" name="destaques" value="preco">Preço</label></p>
+                <p><label><input type="checkbox" name="destaques" value="ambiente">Ambiente</label></p>
+            </p>
+            <p>
+                <label for="opiniao">Sua opinião / Sugestões -</label><br>
+                <textarea id="opiniao" name="opiniao" placeholder="Deixe seu comentário aqui..."></textarea>
+            </p>
+            <p>
+                <button type="submit">Enviar pesquisa</button>
+                <button type="reset">Limpar</button>
+            </p>
+        </form>
+    </div>
+</body>
+</html>
