@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tela de Login</title>
+    <style>
+        body {
+            font-family: Helvetica;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
+            height: 100vh;
+        }
+        .login {
+            background-color: white;
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        input {
+            width: 100%;
+            margin-top: 10px;
+            padding: 8px;
+        }
+        button {
+            width: 100%;
+            margin-top: 15px;
+            padding: 8px;
+            background-color: blue;
+            color: white;
+            border: none;
+        }
+        a {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <h2>Login</h2>
+        <form>
+            <input type="text" placeholder="Usuário">
+            <input type="password" placeholder="Senha">
+            <div style="margin-top:10px;">
+                <input type="checkbox" style="width:auto;">
+                Lembrar senha
+            </div>
+            <button>Entrar</button>
+            <a href="#">Esqueci minha senha</a>
+        </form>
+    </div>
+</body>
+</html>
